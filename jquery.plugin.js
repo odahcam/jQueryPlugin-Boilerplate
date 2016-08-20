@@ -67,22 +67,22 @@
          * jQuery has an extend method which merges the contents of two or
          * more objects, storing the result in the first object. The first object
          * is generally empty as we don't want to alter the default options for
-         * future instances of the plugin
-         * 
-         * To make this recursive, for merge something like:
-         * 
-         * @example 
+         * future instances of the plugin.
+         *
+         * @example
          * var options = {
          *    elem: "#someElementID",
-         *    size: { 
-         *        width: 0, 
-         *        height: 0 
+         *    size: {
+         *        width: 0,
+         *        height: 0
          *    }
          * }
-         * 
-         * Use @example $.extend(true, {}, defaults, options);
+         *
+         * $.extend(true, {}, defaults, options);
+         *
+         * The example above will recursive merge the defaults and options of the plugin.
          */
-        this.settings = $.extend({}, $.fn[pluginName].defaults, options);
+        this.settings = $.extend(false, {}, $.fn[pluginName].defaults, options, this.$el.data());
 
         // Initialize the plugin instance
         this.init();
