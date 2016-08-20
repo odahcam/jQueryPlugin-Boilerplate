@@ -1,3 +1,7 @@
+/**
+ * @author Luiz Filipe Machado Barni (odahcam) <luiz@odahcam.com>
+ * @version 1.0.2 
+ */
 ;
 /*
  * The semi-colon before function invocation is a safety net against concatenated
@@ -32,9 +36,6 @@
         console.error("jQuery não encontrado, seu plugin jQuery não irá funcionar.");
         return false;
     }
-
-    // Create the defaults once
-    var pluginName = "parallaxScroll";
 
     /**
      * Store the plugin name in a variable. It helps you if later decide to 
