@@ -1,6 +1,6 @@
 /**
  * @author Luiz Filipe Machado Barni (odahcam) <luiz@odahcam.com>
- * @version 1.0.2 
+ * @version 1.0.3
  */
 ;
 /*
@@ -10,10 +10,10 @@
 
 /**
  * 
- * @param {type} $
- * @param {type} window
- * @param {type} document
- * @param {type} undefined
+ * @param {object} $
+ * @param {object} window
+ * @param {object} document
+ * @param {undefined} undefined
  * @returns {undefined}
  */
 (function ($, window, document, undefined) {
@@ -121,7 +121,7 @@
         yourOtherFunction: function (text) {
 
             // some logic
-            $(this.element).text(text);
+            $(this.el).text(text);
         },
         /**
          * The 'destroy' method is were you free the resources used by your plugin:
@@ -161,7 +161,7 @@
 
     /**
      * This is a real private method. A plugin instance has access to it
-     * @return {[type]}
+     * @return {undefined}
      */
     var privateMethod = function () {
         console.log("privateMethod");
