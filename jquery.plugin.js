@@ -153,9 +153,6 @@
          */
         somePublicMethod: function (foo, bar) {
 
-            // This is a call to a pseudo private method
-            this._pseudoPrivateMethod();
-
             // This is a call to a real private method. You need to use 'call' or 'apply'
             privateMethod.call(this);
         }
