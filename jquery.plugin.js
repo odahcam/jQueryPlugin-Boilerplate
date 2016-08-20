@@ -42,7 +42,7 @@
      * change the plugin's name
      * @type {String}
      */
-    var pluginName = 'jqueryPlugin';
+    var pluginName = 'jQueryPlugin';
 
     /**
      * The plugin constructor
