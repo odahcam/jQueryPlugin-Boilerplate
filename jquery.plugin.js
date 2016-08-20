@@ -116,15 +116,6 @@
          */
         init: function () {
 
-            $(elem).each(function () {
-                var elem = $(this);
-                $(window).scroll(function () {
-                    console.log(elem);
-                    var e = -($(window).scrollTop() / o), a = "50% " + e + "px";
-                    elem.css("margin-bottom", a)
-                });
-            });
-
         },
         yourOtherFunction: function (text) {
 
