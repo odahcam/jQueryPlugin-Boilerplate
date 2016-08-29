@@ -202,7 +202,7 @@
             return this.each(function () {
                 var instance = $.data(this, 'plugin_' + pluginName);
                 if (instance instanceof Plugin && typeof instance[options] === 'function') {
-                    instance[options].apply(instance, Array.prototype.slice.call(args, 1));
+                    instance[options].apply(instance, Array.prototype.slice.call(args, 1)); // Array.prototype.slice will convert the arguments object passed by .call()
                 }
             });
         }
