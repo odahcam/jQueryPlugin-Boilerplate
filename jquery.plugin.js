@@ -1,6 +1,6 @@
 /**
  * @author Luiz Filipe Machado Barni (odahcam) <luiz@odahcam.com>
- * @version 1.0.3
+ * @version 1.0.4
  */
 ;
 /*
