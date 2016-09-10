@@ -60,6 +60,9 @@
         // Store a jQuery reference  to the source element
         this.$el = $(element);
 
+        // Stores the data-* attributes values in 'dataset', as the javascript .dataset
+        this.dataset = this.$el.data();
+
         // Set the instance options extending the plugin defaults and
         // the options passed by the user
 
@@ -82,7 +85,7 @@
          *
          * The example above will recursive merge the defaults and options of the plugin.
          */
-        this.settings = $.extend(false, {}, $.fn[pluginName].defaults, options, this.$el.data());
+        this.settings = $.extend(false, {}, $.fn[pluginName].defaults, options, this.dataset);
 
         // Initialize the plugin instance
         this.init();
